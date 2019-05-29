@@ -1,10 +1,10 @@
 {
-  "name": "LetMeFix",
-  "short_name": "LTM",
-  "description": "LetMeFix E.R. Projeto",
+  "name": "MyUMA",
+  "short_name": "MyUMa",
+  "description": "Aplicação não oficial da Universidade da Madeira",
     "icons": [
       {
-        "src": "/images/icon-192.png",
+        "src": "/images/192.png",
         "sizes": "192x192",
         "type": "image/png"
       }

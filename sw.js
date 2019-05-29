@@ -15,8 +15,7 @@ self.addEventListener('install', event => {
   );
 });
 
- 
-/* Serve cached content when offline */
+/* Servir páginas de modo offline */
 self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then((response) => {
