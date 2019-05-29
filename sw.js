@@ -2,10 +2,7 @@
   '/',
   '/images/icon-152.png',
   '/index.html',
-  '/registar.html',
-  '/css/style.css',
-  '/js/main.js',
-  '/js/jquery.js',
+  '/css/styles.css',
   '/manifest.json'
 ];
 const staticCacheName = 'letmefix-app';
