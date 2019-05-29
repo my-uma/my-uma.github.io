@@ -3,12 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>MyUMa</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <!-- Manifestos-->
   <link rel="manifest" href="/manifest.json">
   <link rel="manifest" href="/manifest.webmanifest">
-  <!-- Javascript -->
-  <script src="/js/jquery.js"></script>
   <!-- Definições do ecra do PWA-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- PWA no iOS-->
@@ -19,12 +17,27 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <!-- Tema do Browser-->
   <meta name="theme-color" content="#317EFB"/>
-
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
-  <h1>Bem vindo ao MyUMa</h1>
-  <h1>Como pode observar, estamos trabalhando para criar a vossa futura favorita app</h1>
-    <!-- Worker, Funções JavaScript-->
-    <script src="/js/main.js"></script>
+  <div class="cabeca">
+    <h1>MyUMa</h1>
+  </div>
+  <div class="corpo">
+    <input type="text" placeholder="Número de Aluno">
+    <br>
+    <button2>Entrar</button2>
+  </div>
+  <script>
+  window.onload = () => {
+    'use strict';
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+              .register('./sw.js');
+    }
+  }
+  </script>
 </body>
 </html>

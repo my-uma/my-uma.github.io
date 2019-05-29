@@ -2,13 +2,15 @@
   '/',
   '/images/icon-152.png',
   '/index.html',
+  '/registar.html',
+  '/css/style.css',
   '/js/main.js',
   '/js/jquery.js',
   '/manifest.json'
 ];
-const staticCacheName = 'my-uma-app';
+const staticCacheName = 'letmefix-app';
 self.addEventListener('install', event => {
-  console.log('A instalar os service workers e os cache statics assets');
+  console.log('Attempting to install service worker and cache static assets');
   event.waitUntil(
     caches.open(staticCacheName).then(cache => {
       return cache.addAll(filesToCache);
