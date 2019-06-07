@@ -28,29 +28,16 @@
     <h1>MyUMa</h1>
   </div>
   <div class="corpo">
-    <input type="text" id="numeroDeAluno" placeholder="Número de Aluno">
-    <br>
-    <button2 onclick="login();">Entrar</button2>
-    <p>Este site usa cookies.</p>
-    <p>Ao iniciar sessão está a concentir o uso destes.</p>
+    <p>Bem vindo ao MyUMa</p>
+    <button2 onclick="sair();">Sair</button2>
   </div>
   <script>
-    function login(){
+    function sair(){
       $(document).ready(function () {
-        document.cookie = "numeroDeAluno="+document.getElementById('numeroDeAluno');
-        window.location.href = "/main.html";
+        document.cookie = "";
+        window.location.href = "/index.html";
       });
     }
-/*
-  window.onload = () => {
-    'use strict';
-
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-              .register('sw.js');
-    }
-  }
-  */
   </script>
 </body>
 </html>
